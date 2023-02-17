@@ -1,0 +1,24 @@
+<div class="form-group">
+    <!-- <ul>
+      <li *ngFor="let fruit of fruits">{{fruit}}</li>
+    </ul> -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Meyve Adi</th>
+          <th>Eklenme Tarihi</th>
+          <th>Sil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fruit of fruits let i=index">
+          <td>{{i+1}}</td>
+          <td>{{fruit.name}}</td>
+          <td>{{fruit.date | date:'dd.MM.yyyy | hh:mm:ss'}}</td>
+          <td><button class="btn btn-danger" (click)="deleteItem(fruit)">Sil</button></td>
+          <!-- button.btn.btn-danger -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
