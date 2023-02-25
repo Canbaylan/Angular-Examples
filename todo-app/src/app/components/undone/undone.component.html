@@ -1,0 +1,8 @@
+<h4 class="text-primary">Yapilacaklar Listesi</h4>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let undone of unDoneModels">
+        {{ undone.title}}
+        <button class="btn btn-success me-1 " (click)="completeUnDone(undone)">Tamamla</button>
+        <button class="btn btn-danger "  (click)="deleteUnDone(undone)">Sil</button>
+    </li>
+</ul>

@@ -1,0 +1,5 @@
+<h4 class="text-success">Tamamlananlar Listesi</h4>
+<li class="list-group-item" *ngFor="let done of doneModels">
+    {{ done.title }}
+    <button class="btn btn-danger" (click)="changeDoneItem(done)">Sil</button>
+</li>

@@ -1,0 +1,13 @@
+<div class="container">
+    <app-add-undone [unDoneModels]="unDoneModels">
+        <h6>To Do</h6>
+    </app-add-undone>
+    <div class="row mt-2">
+      <div class="col-md-6">
+        <app-undone [unDoneModels]="unDoneModels" [doneModels]="doneModels"></app-undone>
+      </div>
+      <div class="col-md-6 mt-2">
+        <app-done [doneModels]="doneModels" [unDoneModels]="unDoneModels"></app-done>
+      </div>
+    </div>
+  </div>
