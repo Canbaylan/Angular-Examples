@@ -9,7 +9,8 @@ import { BasketComponent } from './components/basket/basket.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PaymentComponent } from './components/payment/payment.component';
-import { ProductComponent } from './components/product/product.component'
+import { ProductComponent } from './components/product/product.component';
+import { OrderComponent } from './components/order/order.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductComponent } from './components/product/product.component'
     HomeComponent,
     NavbarComponent,
     PaymentComponent,
-    ProductComponent
+    ProductComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { ProductComponent } from './components/product/product.component'
     ToastrModule.forRoot({
       closeButton:true,
       progressBar:true,
-      timeOut:1500
+      timeOut:1500,
+      positionClass:"toast-bottom-right"
     })
   ],
   providers: [],
