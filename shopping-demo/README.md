@@ -5,7 +5,7 @@
 <img src="https://i.hizliresim.com/6g4q0n2.gif" style="width:95%"/>
 </div>
 
-# Shopping Web Site - Demo v2
+# Shopping Web Site - Demo v1
  
 <br/>
 <div style="display: flex; justify-content:center;">
